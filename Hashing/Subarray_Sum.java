@@ -4,8 +4,8 @@ import java.util.HashSet;
 
 class Subaaray_Sum{
     public static void main(String[] args) {
-        int arr[] = {5, 8, -4, -4, 9, -2, 2};
-        int sum = 9;
+        int arr[] = {5, 8, 6};
+        int sum = 19;
 
         System.out.println(sum_(arr, sum));
     }
