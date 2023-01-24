@@ -7,7 +7,7 @@ public class SecondLargestElement{
         
         System.out.println(sec(array));
         System.out.println(Secondlargest(array));
-        //System.out.println(secLargest(array));
+        // System.out.println(secLargest(array));
     }
 
     static int Secondlargest(int array[])
@@ -31,7 +31,6 @@ public class SecondLargestElement{
                 }
             }
         }
-        System.out.println(array[max2]);
         return array[max2];
     }
 
