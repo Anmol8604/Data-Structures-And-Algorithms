@@ -66,8 +66,8 @@ public class Prime {
         Scanner sc = new  Scanner(System.in);
         int n = sc.nextInt();
         // System.out.println(checkPrime(n));
-        // System.out.println(isPrime(n));
-        System.out.println(primeCheck(n));
+        System.out.println(isPrime(n));
+        // System.out.println(primeCheck(n));
 
     }
 }

@@ -4,5 +4,6 @@
         "MATHEMATICS",
         "BIT MAGIC",
         ""
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
