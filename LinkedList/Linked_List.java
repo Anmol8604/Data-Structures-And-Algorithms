@@ -1,6 +1,6 @@
 package LinkedList;
 
-import java.sql.SQLOutput;
+import javax.sound.midi.Soundbank;
 
 class Node {
     int data;
@@ -38,7 +38,47 @@ public class Linked_List {
     }
 
     static Linked_List insertAtMiddle(Linked_List li, int data, int pos) {
+        if(pos == 1) {
+            insertAtFirst(li, data);
+            return li;
+        }
+        else if(pos == size()+1) {
+            insert(li, data);
+            return li;
+        }
+        else {
+            Node newNode = new Node(data);
+            Node temp = head;
+            int count = 0;
+            while (++count != pos-1) {
+                temp = temp.next;
+                if(temp == null) return li;
+            }
+            Node part2 = temp.next;
+            temp.next = newNode;
+            newNode.next = part2;
+        }
         return li;
+    }
+
+    static int search(int data){
+        int count = 1;
+        Node temp = head;
+        while (temp.data != data) {
+            temp = temp.next;
+            ++count;
+            if(temp == null) return -1;
+        }
+        return count;
+    }
+    static int size() {
+        int count = 0;
+        Node temp = head;
+        while(temp != null) {
+            temp = temp.next;
+            count++;
+        }
+        return count;
     }
     static Linked_List deleteFirst(Linked_List li) {
         if(head == null) return null;
@@ -61,8 +101,13 @@ public class Linked_List {
         li = insert(li, 10);
         li = insert(li, 20);
         li = insert(li, 30);
+        li = insert(li, 40);
+        li = insert(li, 50);
         System.out.print("Linked List : ");
         display();
+
+        int length = size();
+        System.out.println("Size of Linked List : " + length);
 
         li = insertAtFirst(li, 5);
         System.out.print("Linked List after inserting a Node at beginning : ");
@@ -79,6 +124,29 @@ public class Linked_List {
         li = insertAtMiddle(li, 15, 2);
         System.out.print("Linked List after inserting a Node at given position : ");
         display();
+
+        li = insertAtMiddle(li, 25, 4);
+        System.out.print("Linked List after inserting a Node at given position : ");
+        display();
+
+        li = insertAtMiddle(li, 35, 6);
+        System.out.print("Linked List after inserting a Node at given position : ");
+        display();
+
+        int index;
+        index = search(30);
+        if(index == -1) System.out.println("Element not found in Linked List");
+        else System.out.println("Element found at position : " + index);
+
+        index = search(10);
+        if(index == -1) System.out.println("Element not found in Linked List");
+        else System.out.println("Element found at position : " + index);
+
+        index = search(90);
+        if(index == -1) System.out.println("Element not found in Linked List");
+        else System.out.println("Element found at position : " + index);
+
+
     }
     static void display(){
         Node temp = head;
