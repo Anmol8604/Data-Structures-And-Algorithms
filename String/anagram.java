@@ -13,21 +13,17 @@ public class anagram {
       Arrays.sort(brr);
       for(int i = 0; i < arr.length; i++)
       {
-          System.out.println(arr[i]);
+          System.out.print(arr[i]);
       }
       System.out.println();
       for(int i = 0; i < brr.length; i++)
       {
-          System.out.println(brr[i]);
+          System.out.print(brr[i]);
       }
 
       System.out.println();
       
       boolean flag = true;
-    //   if(arr.length == brr.length)
-    //     {
-    //         flag = false;
-    //    }
       for(int i = 0; i<arr.length; i++)
         {
             if(arr[i].equals(brr[i]))
