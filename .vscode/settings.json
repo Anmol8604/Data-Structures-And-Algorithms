@@ -1,9 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "RECURSION",
-        "MATHEMATICS",
-        "BIT MAGIC",
-        ""
-    ],
-    "java.debug.settings.onBuildFailureProceed": true
-}
