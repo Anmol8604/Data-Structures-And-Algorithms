@@ -26,12 +26,10 @@ public class DeleteFirst {
             temp = temp.next;
         }
         temp.next = curr;
-        return;
     }
     void deleteF() {
         Node curr = head;
         head = curr.next;
-        return;
     }
 
     void display() {
@@ -41,6 +39,5 @@ public class DeleteFirst {
             temp = temp.next;
         }
         System.out.println();
-        return;
     }
 }

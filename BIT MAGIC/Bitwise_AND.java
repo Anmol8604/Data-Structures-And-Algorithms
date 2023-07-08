@@ -1,3 +1,5 @@
+import Linked_List.Node;
+
 import java.util.Scanner;
 
 public class Bitwise_AND {
