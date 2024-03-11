@@ -66,7 +66,7 @@ class Person {
     // Function or Method
 
     //Polymorphism
-    // we have also learned Polymorphism : it means multiple forms, like here walk behaieved in two types when we pass an arguments steps in it then he returned Name walked steps, and when we call it without agrgument then it returned Name is walking.
+    // We have also learned Polymorphism: it means multiple forms, like here walk behaieved in two types when we pass an arguments steps in it then he returned Name walked steps, and when we call it without agrgument then it returned Name is walking.
     void walk()
     {
         System.out.println(Name + " is walking");
